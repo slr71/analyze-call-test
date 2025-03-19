@@ -29,8 +29,6 @@
    {"act.config.first"  "first"
     "act.config.second" "second"}
    props)
-  (when-not (cc/validate-config configs config-valid)
-    (throw (Exception. "something bad happened")))
 
   (println (first-config))
   (println (second-config)))
